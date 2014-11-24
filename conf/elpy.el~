@@ -1,0 +1,9 @@
+(setq elpy-rpc-python-command "~/.emacs.d/venv/bin/python")
+
+(elpy-enable)
+(elpy-use-ipython)
+
+(setq jedi:setup-keys t)  ;; does not work with elpy?
+(setq jedi:complete-on-dot t)
+(setq jedi:key-goto-definition (kbd "C-."))
+(setq jedi:key-goto-definition-pop-marker (kbd "C-,"))

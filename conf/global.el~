@@ -1,0 +1,46 @@
+;;
+;; Settings that affect all modes
+;;
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+
+;; Keep mouse out of the way
+(mouse-avoidance-mode 'banish)
+
+(setq x-select-enable-clipboard t)
+
+(global-unset-key (kbd "C-t"))
+
+(global-undo-tree-mode 1)
+(push '(" *undo-tree*" :width 0.3 :position right) popwin:special-display-config)
+(push '(" *compilation*" :width 0.3 :position right) popwin:special-display-config)
+
+(savehist-mode 1)
+
+;; Alternative window switching
+;; move to left windnow
+(global-set-key [M-left] 'windmove-left)
+(global-set-key (kbd "C-c w b") 'windmove-left)
+;; move to right window
+(global-set-key [M-right] 'windmove-right)
+(global-set-key (kbd "C-c w f") 'windmove-right)
+;; move to upper window
+(global-set-key [M-up] 'windmove-up)
+(global-set-key (kbd "C-c w p") 'windmove-up)
+;; move to downer window
+(global-set-key [M-down] 'windmove-down)
+(global-set-key (kbd "C-c w n") 'windmove-down)
+
+
+(defun fullscreen ()
+  (interactive)
+  (set-frame-parameter nil 'fullscreen
+                       (if (frame-parameter nil 'fullscreen) nil 'fullboth)))
+
+(global-set-key [f11] 'fullscreen)

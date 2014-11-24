@@ -1,0 +1,7 @@
+%backup%*
+.history
+history
+.emacs.desktop*
+ac-comphist.dat
+venv
+auto-save-list
