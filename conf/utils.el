@@ -16,9 +16,6 @@
 (push '("*Ido Completions*" :noselect t) popwin:special-display-config)
 (push '("*Completions*" :noselect t) popwin:special-display-config)
 
-(require 'direx)
-(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
+(require 'yasnippet)
 
-(require 'jedi-direx)
-(eval-after-load "python"
-  '(define-key python-mode-map "\C-cx" 'jedi-direx:pop-to-buffer))
+(require 'uniquify)

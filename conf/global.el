@@ -19,6 +19,9 @@
 
 (global-undo-tree-mode 1)
 
+(auto-insert-mode t)
+(setq auto-insert-query nil)
+
 (savehist-mode 1)
 
 ;; Alternative window switching

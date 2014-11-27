@@ -5,3 +5,5 @@ history
 ac-comphist.dat
 venv
 auto-save-list
+*.pyc
+*.elc

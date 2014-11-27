@@ -26,15 +26,20 @@
  ;; If there is more than one, they won't work right.
  '(backup-by-copying t)
  '(backup-directory-alist (quote ((".*" . "~/.emacs.backups"))))
- '(grep-command "egrep -nH -e ")
- '(grep-find-template "find . <X> -type f <F> -exec egrep <C> -nH -e <R> {} +")
  '(delete-selection-mode nil)
  '(desktop-load-locked-desktop t)
  '(desktop-save t)
  '(desktop-save-mode t)
+ '(desktop-restore-eager 10)
+ '(grep-command "egrep -nH -e ")
+ '(grep-find-template "find . <X> -type f <F> -exec egrep <C> -nH -e <R> {} +")
  '(mark-even-if-inactive t)
+ '(safe-local-variable-values (quote ((python-django-project-root . "~/printbox/PrintboxDemo/webapp") (python-django-project-root . "~/printbox/PrintboxDemo/webapp/") (python-django-settings-module . "printboxdemo.settings") (python-django-project-root . "~/photo/PrintboxDemo/webapp/"))))
  '(scroll-bar-mode (quote right))
- '(transient-mark-mode 1))
+ '(transient-mark-mode 1)
+ '(uniquify-buffer-name-style (quote reverse) nil (uniquify))
+ '(uniquify-ignore-buffers-re "^\\*")
+ '(uniquify-separator "|"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
