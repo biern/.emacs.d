@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pytest.set_trace()
+# key: pydb
+# group: Debug
+# --
+import pytest; pytest.set_trace()
