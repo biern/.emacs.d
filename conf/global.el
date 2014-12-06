@@ -24,6 +24,9 @@
 
 (savehist-mode 1)
 
+(require 'auto-complete)
+;; (global-auto-complete-mode)
+
 ;; Alternative window switching
 ;; move to left windnow
 (global-set-key [M-left] 'windmove-left)
