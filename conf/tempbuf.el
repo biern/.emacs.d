@@ -1,0 +1,12 @@
+(require 'tempbuf)
+
+(add-hook 'custom-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'dired-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'python-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'sgml-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'js2-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'w3-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'Man-mode-hook 'turn-on-tempbuf-mode)
+(add-hook 'view-mode-hook 'turn-on-tempbuf-mode)
+(setq tempbuf-life-extension-ratio 4)
+(setq tempbuf-minimum-timeout 3600)
