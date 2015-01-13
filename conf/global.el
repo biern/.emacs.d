@@ -15,6 +15,8 @@
 
 (setq x-select-enable-clipboard t)
 
+(setq-default indent-tabs-mode nil)
+
 (global-unset-key (kbd "C-t"))
 
 (global-undo-tree-mode 1)
