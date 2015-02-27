@@ -33,6 +33,7 @@
  '(desktop-save-mode t)
  '(desktop-restore-eager 10)
  '(grep-command "egrep -nH -e ")
+ '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
  '(grep-find-template "find . <X> -type f <F> -exec egrep <C> -nH -e <R> {} +")
  '(mark-even-if-inactive t)
  '(safe-local-variable-values (quote ((python-django-project-root . "~/printbox/PrintboxDemo/webapp") (python-django-project-root . "~/printbox/PrintboxDemo/webapp/") (python-django-settings-module . "printboxdemo.settings") (python-django-project-root . "~/photo/PrintboxDemo/webapp/"))))
