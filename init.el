@@ -14,6 +14,7 @@
 
 (load-file "~/.emacs.d/conf/global.el")
 (load-file "~/.emacs.d/conf/ido.el")
+(load-file "~/.emacs.d/conf/ibuffer.el")
 (load-file "~/.emacs.d/conf/elpy.el")
 (load-file "~/.emacs.d/conf/magit.el")
 (load-file "~/.emacs.d/conf/tempbuf.el")
