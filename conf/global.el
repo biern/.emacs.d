@@ -2,7 +2,21 @@
 ;; Settings that affect all modes
 ;;
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(defun enable_delete_trailing_whitespaces ()
+  (interactive)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  )
+
+(defun disable_delete_trailing_whitespaces ()
+  (interactive)
+  (remove-hook 'before-save-hook 'delete-trailing-whitespace)
+  )
+
+(global-set-key (kbd "C-c C-w e") 'enable_delete_trailing_whitespaces)
+(global-set-key (kbd "C-c C-w d") 'disable_delete_trailing_whitespaces)
+
+
+(enable_delete_trailing_whitespaces)
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)

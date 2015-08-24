@@ -1,7 +1,8 @@
 (setq default-frame-alist '((font . "Monospace-10")))
 
 (load-theme 'tango t t)
-(enable-theme 'tango)
+(load-theme 'django t t)
+(enable-theme 'django)
 
 (require 'nyan-mode)
 (nyan-mode)
