@@ -40,7 +40,6 @@
  '(mark-even-if-inactive t)
  '(org-agenda-files (quote ("~/magister/praca/wstęp.org")))
  ;; '(safe-local-variable-values (quote ((python-django-project-root . "~/printbox/PrintboxDemo/webapp") (python-django-project-root . "~/printbox/PrintboxDemo/webapp/") (python-django-settings-module . "printboxdemo.settings") (python-django-project-root . "~/photo/PrintboxDemo/webapp/"))))
- '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1)
  '(uniquify-buffer-name-style (quote reverse) nil (uniquify))
  '(uniquify-ignore-buffers-re "^\\*")
